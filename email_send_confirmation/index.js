@@ -17,7 +17,7 @@ module.exports = function (context) {
     // Prepare HTTP request options for calling API service
     var request_options = {
         method: 'POST',
-        url: `https://${service}.azurewebsites.net/api/${operation}?code=${service_key}&clientId=crankcase`,
+        url: `https://${service}.azurewebsites.net/api/${operation}?code=${service_key}&clientId=hedwig`,
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
