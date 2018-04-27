@@ -17,7 +17,7 @@ module.exports = function (context) {
         "confirmation_button_text": "Confirm, baby!"
     };
 
-    ejs.renderFile(__dirname + '/../email_send_confirmation/template.html', template_values, function(err, str) {
+    ejs.renderFile(__dirname + '/../email_send_confirmation/template.ejs', template_values, function(err, str) {
         if (err) {
             context.log(err);
             context.done(err);
