@@ -14,7 +14,7 @@ module.exports = function (context) {
         "text":"This is another test email.",
     }
 
-    ejs.renderFile(__dirname + '/template.html', {}, function(err, str) {
+    ejs.renderFile(__dirname + '/../email_send_confirmation/template.html', {}, function(err, str) {
         if (err) {
             context.log(err);
             context.done(err);
