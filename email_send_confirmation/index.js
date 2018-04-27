@@ -1,4 +1,4 @@
-module.exports = function (context) {
+module.exports = function (context, data) {
     var request = require('request');
     var ejs = require('ejs');
 
@@ -6,6 +6,7 @@ module.exports = function (context) {
     var service = "wrdsb-hedwig";
     var operation = "message_send";
     var service_key = process.env['HedwigKey'];
+    var template_path = __dirname + '/../email_send_confirmation/template.ejs';
 
     var payload = {
         "from":"claptrap@wrdsb.ca",
@@ -17,7 +18,7 @@ module.exports = function (context) {
         "confirmation_button_text": "Confirm, baby!"
     };
 
-    ejs.renderFile(__dirname + '/../email_send_confirmation/template.ejs', template_values, function(err, str) {
+    ejs.renderFile(template_path, template_values, function(err, str) {
         if (err) {
             context.log(err);
             context.done(err);
