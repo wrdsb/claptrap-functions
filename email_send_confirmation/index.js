@@ -12,9 +12,12 @@ module.exports = function (context) {
         "to":"james_schumann@wrdsb.ca",
         "subject":"Test HTML email from Claptrap, via Hedwig",
         "text":"This is another test email.",
-    }
+    };
+    var template_values = {
+        "confirmation_button_text": "Confirm, baby!"
+    };
 
-    ejs.renderFile(__dirname + '/../email_send_confirmation/template.html', {}, function(err, str) {
+    ejs.renderFile(__dirname + '/../email_send_confirmation/template.html', template_values, function(err, str) {
         if (err) {
             context.log(err);
             context.done(err);
