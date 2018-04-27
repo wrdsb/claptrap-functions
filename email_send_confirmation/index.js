@@ -14,10 +14,10 @@ module.exports = function (context, data) {
 
     var template_values = {
         //Please confirm <%= thing_being_confirmed %> by clicking the link below.
-        "thing_being_confirmed": "this thing that needs confirmation",
+        thing_being_confirmed: "this thing that needs confirmation",
 
-        "reason_confirmation_required": "We may need to send you critical information about our service and it is important that we have an accurate email address.";
-        "confirmation_button_text": "Confirm, baby!"
+        reason_confirmation_required: "We may need to send you critical information about our service and it is important that we have an accurate email address.",
+        confirmation_button_text: "Confirm, baby!"
     };
 
     var payload = {
