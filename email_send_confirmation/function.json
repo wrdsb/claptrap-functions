@@ -15,9 +15,5 @@
             "direction": "out"
         }
     ],
-    "disabled": false,
-    "_originalEntryPoint": false,
-    "_originalScriptFile": "index.js",
-    "scriptFile": "../.funcpack/index.js",
-    "entryPoint": "email_send_confirmation"
+    "disabled": false
 }
