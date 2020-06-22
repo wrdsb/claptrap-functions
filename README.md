@@ -1,2 +1,2 @@
-# claptrap-functions
-Azure Functions app for Claptrap, our API client which treats people as though they are software.
+# Archived.
+Merged into [COSMOS](https://github.com/wrdsb/cosmos), June 22, 2020.
